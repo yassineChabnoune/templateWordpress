@@ -1,4 +1,57 @@
 /**
-Theme Name : My Theme
-Author : Mr Digital
- */
+Theme Name: Ourtheme
+Author: Ilias
+**/
+
+.container{
+	width: 1500px;
+	margin: 0 auto;
+}
+.site-header h1{
+	font-family: arial;
+}
+
+/*Main navigation*/
+
+.main-nav{
+	background-color: #222;
+}
+.main-nav ul{
+	margin: 0;
+	padding: 0;
+}
+.main-nav li{
+	list-style: none;
+	display: inline-block;
+}
+.main-nav li:hover{
+	background-color: #333;
+}
+.main-nav li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 15px;
+	font-family: arial;
+}
+.main-nav ul li:hover ul{
+	display: block;
+	opacity: 1;
+}
+.main-nav ul ul{
+	display: none;
+	position: absolute;
+	top: -9999999;
+	opacity: 0;
+	background-color: #333; 
+}
+.main-nav ul ul li{
+	display: block;
+}
+.main-nav ul ul li a:hover{
+	color: #24A2D1;
+	background-color: #444;
+}
+.main-nav ul li.current-menu-item a:link{
+	background-color: #555;
+}

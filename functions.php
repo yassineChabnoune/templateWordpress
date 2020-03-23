@@ -1,6 +1,12 @@
-<?php
-function   load_css()
+<?php 
+///ENABLE MENU OPTIONS
+
+add_theme_support( 'menus' );
+
+//REGISTER MENU
+function set_menu_areas()
 {
-    wp_register_style('bootstrap',get_template_directory_uri( ).'/css/bootstrap.min.css', array(),false,'all' );
-    wp_enqueue_style('bootstrap ' );
+	register_nav_menu( 'main-menu' , 'primary-menu' );
 }
+add_action( 'init', 'set_menu_areas')
+ ?>
