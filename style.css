@@ -1,57 +1,192 @@
-/*
-Theme name : Retro
-Author : Yassine & Attar
-author URI: http://joesmastery.com
-Version:1.0
+/**
+Theme Name: Ourtheme
+Author: Ilias
+Version: 1.0
+**/
 
-*/
-@import url('css/bootstrap.min.css');
 
-.container {
-    width:1200px;
-    margin: 0 auto;
 
+*{
+	padding: 0;
+	margin: 0;
 }
-.site-header h1
-{
-    font-family: arial;
-}
-
-/******************************************************************************************8
-/* main navigation
-*************************************************************************************8 */
-
-.main-nav {
-    background-color: #222;
+.container{
+	width: 1050px;
+	margin: 0 auto;
+	background-color: white;
 }
 
+body{
+	background-color: #172232;
+	font-family: arial;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 962px){
+	.container{
+		max-width: 100% !important;
+	}
+}
+
+
+
+/* header */
+
+.site-header h1{
+	font-family: arial;
+	padding: 20px;
+}
+.site-header h1 a{
+	color: #232323;
+}
+/*Main navigation*/
+
+.main-nav{
+	background-color: #222;
+}
 .main-nav ul{
-    padding:0;
-    margin: 0;
+	margin: 0;
+	padding: 0;
 }
-
 .main-nav li{
-    list-style: none;
-    display: inline-block;
+	list-style: none;
+	display: inline-block;
 }
 .main-nav li:hover{
-    background-color: #333;
+	background-color: #333;
 }
 .main-nav li a{
-    text-decoration: none;
-    color: #fff;
-    display: block ;
-    padding: 15px;
-    font-family: Arial;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 15px;
+	font-family: arial;
 }
-.main-nav ul li :hover ul {
-    display: block;
-
+.main-nav ul li:hover ul{
+	display: block;
+	
 }
-.main-nav ul ul
-{
-    display: none;
-    position: absolute;
+.main-nav ul ul{
+	display: none;
+	position: absolute;
+	background-color: #333; 
+}
+.main-nav ul ul li{
+	display: block;
+}
+.main-nav ul ul li a:hover{
+	color: #24A2D1;
+	background-color: #444;
+}
 
-    background-color: #333333;
+/* typography */
+a{
+	text-decoration: none !important;
+	color: #24A2D1;
+}
+/* page content */
+.page-content{
+	border-right: 4px solid #888;
+	border-left: 4px solid #888;
+}
+.inner-content{
+	margin: 0 20px;
+}
+.page-title{
+	font-family: arial;
+	padding: 20px 0;
+	border-bottom: 1px solid #222;
+}
+.title{
+	padding: 20px 0;
+}
+.author{
+	padding: 15px 0
+	font_size: 15px;
+}
+
+.blog{
+	padding-bottom: 20px;
+}
+
+.blog p{
+	font-size: 20px;
+	padding: 5px 0;
+}
+.post{
+	border-bottom: 2px solid #ccc;
+	padding: 20px 0;
+}
+.post:last-of-type{
+	border: none;
+}
+.main-nav ul li.current-menu-item a:link{
+	background-color: #555;
+}
+
+/* footer */
+
+.site-footer{
+	padding: 30px 0;
+	min-height: 100px;
+	background: #24364f;
+}
+/* copyrights */
+.copyrights{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* footer menu */
+.footer-menu{
+	padding: 0 30px;
+}
+.footer-menu ul{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.footer-menu ul li{
+	list-style: none;
+	text-align: center;
+	padding: 0 20px;
+	display: inline-block;
+}
+.footer-menu ul li:before{
+	content: "|";
+	color: #fff;
+	padding-right: 40px;
+}
+.footer-menu ul li:first-of-type:before{
+	content: '';
+}
+.footer-menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+/* contet right / left */
+.clearfix{
+	clear: both;
+}
+.contentleft{
+	width: 60%;
+	float: left;
+}
+.contentright{
+	width: 35%;
+	float: right;
+	margin-top: 20px;
+}
+.the-widget h2{
+	margin: 20px 0;
+	background-color: #172232
+	color: #white;
+	font-size: 20px;
+	padding: 5px 10px;
+	border-bottom: 2px solid #444;
+	font-weight: normal;
 }
