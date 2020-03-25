@@ -3,6 +3,10 @@
 
 add_theme_support( 'menus' );
 
+//ENABLE FEATURED THEME
+
+add_theme_support( 'post-thumbnails' );
+
 //REGISTER MENU
 function set_menu_areas()
 {
@@ -11,7 +15,6 @@ function set_menu_areas()
 };
 add_action( 'init', 'set_menu_areas');
 //REGISTER SIDEBAR
-//widget locations
 register_sidebar( array(
 	'id' => 'right-sidebar',
 	'name' => 'Right Sidebar',
@@ -19,9 +22,5 @@ register_sidebar( array(
 	'after_widget' => '</div>',
 	'before_title' => '<h2>',
 	'after_title' => '</h2>',
-) );
-
-
-
-add_action('widgets_init','register_sidebar');
+ ) );
  ?>

@@ -17,7 +17,7 @@ Version: 1.0
 }
 
 body{
-	background-image: url("70983885-patron-arabe-indio-islamico-motivos-japoneses-mandala-de-patrones-sin-fisuras-fondo-bohemio.jpg");
+	background-image: url("123.jpg");
 	font-family: arial;
 
 }
@@ -28,23 +28,18 @@ body{
 @media screen and (max-width: 962px){
 	.container{
 		max-width: 100% !important;
+		
 	}
 }
 
 
 
 /* header */
-.site-header
-{
-	height: 200px;
-	background-color: #24A2D1;
-}
-.site-header h1{
-	font-family: arial;
-	padding: 20px;
-}
-.site-header h1 a{
-	color: #232323;
+.site-header{
+	height: 600px;
+	background-image: url("computers-2.jpg");
+
+	
 }
 /*Main navigation*/
 
@@ -108,7 +103,7 @@ a{
 	padding: 20px 0;
 }
 .author{
-	padding: 15px 0;
+	padding: 15px 0
 	font_size: 15px;
 }
 
@@ -130,12 +125,6 @@ a{
 .main-nav ul li.current-menu-item a:link{
 	background-color: #555;
 }
-/*h1 a img*/
-/*{*/
-/*	size: 509px;*/
-/*}*/
-
-
 
 /* footer */
 
@@ -189,16 +178,5 @@ a{
 .contentright{
 	width: 35%;
 	float: right;
-	margin-top: 20px;
 }
-.the-widget h2{
-	margin: 20px 0;
-	background-color: #172232;
-	color: #ffffff;
-	font-size: 20px;
-	padding: 5px 10px;
-	border-bottom: 2px solid #444;
-	font-weight: normal;
-}
-
 /** edzed **/

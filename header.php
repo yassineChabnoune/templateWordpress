@@ -14,7 +14,7 @@
     
     <div class="container" >
     	<header class="site-header">
-    		<h1><a href="<?php echo home_url(); ?>"> <?php echo bloginfo(); ?> </a></h1>
+    		<h1><a href="<?php echo home_url(); ?>"><img src='EST-Sidi-bennour.png'></a></h1>
     	</header>
     	<nav class="main-nav">
     		<?php wp_nav_menu( array('theme_location' => 'main-menu') ); ?>

@@ -4,9 +4,8 @@
 		<div class="page-title">
 			<h1>Présentation</h1>
 		</div>
-		<div class="contentleft">
+			<div class="contentleft">
 		<div class="blog">
-
 			<?php if(have_posts()): while(have_posts()): the_post(); ?>
 				<div class="post">
 				<h2 class="title"><a href="<?php the_permalink();  ?>"><?php the_title(); ?></a></h2>
@@ -24,8 +23,7 @@
 		</div>
 		</div>
 		<div class="contentright">
-            <?php dynamic_sidebar('sidebar');?>
-			<?php get_sidebar(  );  ?>
+			<?php get_sidebar(  ); ?>
 		</div>
 		<div class="clearfix"></div>
 	</div>
