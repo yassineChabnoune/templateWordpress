@@ -24,6 +24,7 @@
 		</div>
 		</div>
 		<div class="contentright">
+            <?php dynamic_sidebar('sidebar');?>
 			<?php get_sidebar(  );  ?>
 		</div>
 		<div class="clearfix"></div>
