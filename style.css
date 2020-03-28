@@ -14,6 +14,9 @@ Version: 1.0
 	width: 1050px;
 	margin: 0 auto;
 	background-color: white;
+	border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 body{
@@ -36,8 +39,7 @@ body{
 
 /* header */
 .site-header{
-	height: 600px;
-	background-image: url("computers-2.jpg");
+	height: 568px;
 
 	
 }
@@ -77,14 +79,14 @@ body{
 	display: block;
 }
 .main-nav ul ul li a:hover{
-	color: #24A2D1;
+	color: #03ff79;
 	background-color: #444;
 }
 
 /* typography */
 a{
 	text-decoration: none !important;
-	color: #24A2D1;
+	color: #02c24f;
 }
 /* page content */
 .page-content{
@@ -131,7 +133,7 @@ a{
 .site-footer{
 	padding: 30px 0;
 	min-height: 100px;
-	background: #24364f;
+	background: #222;
 }
 /* copyrights */
 .copyrights{
